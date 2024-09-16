@@ -1,23 +1,32 @@
+# Ham Flow
+Where amateur radio operators (also known as radio amateurs or hams) share their knowledge.  
+
+
 Change is constant  
-Next.js is not just a frontend React framework, but a fullstack framework.
+Next.js is not just a frontend React framework, but a fullstack framework.  
 
-Google Chromium or Mozilla Firefox  
-VSCodium or Codespaces  
-Node.js
 
-Auto Close Tag  
-Auto Rename Tag  
-Babel JavaScript  
-Better Comments  
-ES7+ React/Redux/React-Native snippets  
-ESLint  
-GitHub Copilot  
-Material Icon Theme  
-npm Intellisense  
-One Dark Pro  
-Path Intellisense  
-Tailwind CSS IntelliSense
+## Prerequisites
+Node.js version 18+  
+**IDE:** VSCodium or Codespaces  
+**Browser:** Google Chromium or Mozilla Firefox  
 
+### VSCodium Extensions:
+- Auto Close Tag  
+- Auto Rename Tag  
+- Babel JavaScript  
+- Better Comments  
+- ES7+ React/Redux/React-Native snippets  
+- ESLint  
+- GitHub Copilot  
+- Material Icon Theme  
+- npm Intellisense  
+- One Dark Pro  
+- Path Intellisense  
+- Tailwind CSS IntelliSense
+
+
+### Installs:
 ```bash
 npm install eslint-config-standard
 ```
@@ -38,7 +47,12 @@ npm install prettier
 
 ```bash
 {
-  "extends": ["next/core-web-vitals", "next/typescript", "standard", "plugin:tailwindcss/recommended", "prettier"]
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "standard",
+    "plugin:tailwindcss/recommended",
+    "prettier"]
 }
 ```
 
@@ -64,4 +78,18 @@ Shift + Ctrl + P: 'open settings json'
   "diffEditor.ignoreTrimWhitespace": false,
   "path-intellisense.showHiddenFiles": true
 }
+```
+
+### Figma layout:
+https://www.figma.com/file/2vtjgodtBxTdg0zOUHPvXh/Course-Designs?type=design&node-id=0%3A1&mode=design&t=kE2VnjGXGIiOk2PY-1
+
+### Setup layout:
+- tailwind.config.ts
+- globals.css
+- theme.css
+
+
+### Install
+```bash
+npm install @tailwindcss/typography tailwindcss-animate
 ```
