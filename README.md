@@ -4,6 +4,7 @@ Where amateur radio operators (also known as radio amateurs or hams) share their
 
 Change is constant  
 Next.js is not just a frontend React framework, but a fullstack framework.  
+Study lection 11  
 
 
 ## Prerequisites
