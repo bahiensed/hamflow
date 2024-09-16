@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Change is constant  
+Next.js is not just a frontend React framework, but a fullstack framework.
 
-## Getting Started
+Google Chromium or Mozilla Firefox  
+VSCodium or Codespaces  
+Node.js
 
-First, run the development server:
+Auto Close Tag  
+Auto Rename Tag  
+Babel JavaScript  
+Better Comments  
+ES7+ React/Redux/React-Native snippets  
+ESLint  
+GitHub Copilot  
+Material Icon Theme  
+npm Intellisense  
+One Dark Pro  
+Path Intellisense  
+Tailwind CSS IntelliSense
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install eslint-config-standard
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+npm install eslint-plugin-tailwindcss
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install eslint-config-prettier
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install prettier
+```
 
-## Learn More
+#### extend .eslintrc.json
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+{
+  "extends": ["next/core-web-vitals", "next/typescript", "standard", "plugin:tailwindcss/recommended", "prettier"]
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Shift + Ctrl + P: 'open settings json'
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.addMissingImports": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.startupEditor": "none",
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "material-icon-theme",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "workbench.editor.enablePreview": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "path-intellisense.showHiddenFiles": true
+}
+```
