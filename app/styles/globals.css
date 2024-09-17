@@ -42,14 +42,14 @@ body {
   }
 
   .primary-gradient {
-    background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+    background: linear-gradient(129deg, #1d66a0 0%, #008fff 100%);
   }
 
   .dark-gradient {
     background: linear-gradient(
       232deg,
-      rgba(23, 28, 35, 0.41) 0%,
-      rgba(19, 22, 28, 0.7) 100%
+      rgba(19, 22, 28, 0.7) 0%,
+      rgba(23, 28, 35, 0.41) 100%
     );
   }
 
@@ -70,13 +70,13 @@ body {
 .light-gradient {
   background: linear-gradient(
     132deg,
-    rgba(247, 249, 255, 0.5) 0%,
-    rgba(229, 237, 255, 0.25) 100%
+    rgba(229, 237, 255, 0.25) 0%,
+    rgba(247, 249, 255, 0.5) 100%
   );
 }
 
 .primary-text-gradient {
-  background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+  background: linear-gradient(129deg, #1d66a0 0%, #008fff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -89,21 +89,21 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #000000;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #777;
   border-radius: 50px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #aaa;
 }
 
 /* Markdown Start */
 .markdown a {
-  color: #1da1f2;
+  color: #e25e0d;
 }
 
 .markdown a,
@@ -125,7 +125,7 @@ code {
   hyphens: auto;
 
   padding: 2px;
-  color: #ff7000 !important;
+  color: #008fff !important;
 }
 
 .markdown pre {
@@ -144,7 +144,7 @@ code {
 
 /* Clerk */
 .cl-internal-b3fm6y {
-  background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%) !important;
+  background: linear-gradient(129deg, #1d66a0 0%, #008fff 100%) !important;
 }
 
 .hash-span {
