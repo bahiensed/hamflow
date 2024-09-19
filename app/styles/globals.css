@@ -48,8 +48,8 @@ body {
   .dark-gradient {
     background: linear-gradient(
       232deg,
-      rgba(19, 22, 28, 0.7) 0%,
-      rgba(23, 28, 35, 0.41) 100%
+      rgba(23, 28, 35, 0.41) 0%,
+      rgba(19, 22, 28, 0.7) 100%
     );
   }
 
@@ -70,8 +70,8 @@ body {
 .light-gradient {
   background: linear-gradient(
     132deg,
-    rgba(229, 237, 255, 0.25) 0%,
-    rgba(247, 249, 255, 0.5) 100%
+    rgba(247, 249, 255, 0.5) 0%,
+    rgba(229, 237, 255, 0.25) 100%
   );
 }
 
@@ -89,21 +89,21 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #000000;
+  background: #ffffff;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #777;
+  background: #888;
   border-radius: 50px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #aaa;
+  background: #555;
 }
 
 /* Markdown Start */
 .markdown a {
-  color: #e25e0d;
+  color: #1da1f2;
 }
 
 .markdown a,
