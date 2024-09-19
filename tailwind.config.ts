@@ -18,25 +18,25 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          500: "#008FFF",
-          100: "#000E19",
+          500: "#008FFF", // Complementary of #FF7000
+          100: "#000E19", // Complementary of #FFF1E6
         },
         dark: {
-          100: "#FFFFFF",
-          200: "#F0EEE8",
-          300: "#EAE7DE",
-          400: "#DED8CB",
-          500: "#EFEFED",
+          100: "#000000",
+          200: "#0F1117",
+          300: "#151821",
+          400: "#212734",
+          500: "#101012",
         },
         light: {
-          900: "#000000",
-          800: "#0B0907",
-          850: "#020202",
-          700: "#231C0E",
-          500: "#847137",
-          400: "#7A7152",
+          900: "#FFFFFF",
+          800: "#F4F6F8",
+          850: "#FDFDFD",
+          700: "#DCE3F1",
+          500: "#7B8EC8",
+          400: "#858EAD",
         },
-        "accent-blue": "#E25E0D",
+        "accent-blue": "#1DA1F2",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
