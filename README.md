@@ -4,7 +4,7 @@ Where amateur radio operators (also known as radio amateurs or hams) share their
 
 Change is constant  
 Next.js is not just a frontend React framework, but a fullstack framework.  
-Study lections 11, 13, 14,  
+Study lections 11, 13, 14, 27, 29/30, 47
 
 
 ## Prerequisites
@@ -94,3 +94,54 @@ https://www.figma.com/file/2vtjgodtBxTdg0zOUHPvXh/Course-Designs?type=design&nod
 ```bash
 npm install @tailwindcss/typography tailwindcss-animate
 ```
+
+## BACKEND
+## Database
+### Install mongodb and mongoose
+```bash
+npm install mongodb mongoose
+```
+
+### Install shadcn form and zod
+```bash
+npx shadcn-ui@latest add form
+```
+
+### Install shadcn tiny mce
+```bash
+npm install --save @tinymce/tinymce-react
+```
+
+
+### Install svix for webhook with Clerk
+```bash
+npm install svix
+```
+
+
+
+## Questions
+
+- What is a function?
+- What is markup?
+
+- What is a React Component?  
+A React component is a JavaScript function that returns markup:  
+```bash
+function Button() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+```
+React apps are made out of components. A component is a piece of the UI (user interface) that has its own logic and appearance. A component can be as small as a button, or as large as an entire page.  
+
+
+
+- What are Client Components?  
+
+- What are React Server Components?  
+https://react.dev/reference/rsc/server-components  
+
+- What are React Server Actions?  
+https://react.dev/reference/rsc/server-actions  
