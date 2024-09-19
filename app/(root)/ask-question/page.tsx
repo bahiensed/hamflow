@@ -4,7 +4,7 @@ import { auth } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
 
 const AskQuestion = async () => {
-  const { userId } = "user_2mAaaA5xsu2luaZYoKSTN7Ic7kQ";
+  const { userId } = auth();
 
   if (!userId) redirect('/sign-in');
 

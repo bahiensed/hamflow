@@ -11,6 +11,7 @@ import Answer from "@/database/answer.model";
 import { BadgeCriteriaType } from "@/types";
 import { assignBadges } from "../utils";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function getUserById(params: any) {
   try {
     connectToDatabase();

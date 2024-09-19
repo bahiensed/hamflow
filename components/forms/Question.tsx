@@ -37,6 +37,7 @@ const Question = ({ type, mongoUserId, questionDetails }: Props) => {
 
   const parsedQuestionDetails =  questionDetails && JSON.parse(questionDetails || '');
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const groupedTags = parsedQuestionDetails?.tags.map((tag: any) => tag.name)
 
   // 1. Define your form.
@@ -82,6 +83,7 @@ const Question = ({ type, mongoUserId, questionDetails }: Props) => {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>, field: any) => {
     if (e.key === 'Enter' && field.name === 'tags') {
       e.preventDefault();
@@ -108,6 +110,7 @@ const Question = ({ type, mongoUserId, questionDetails }: Props) => {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleTagRemove = (tag: string, field: any) => {
     const newTags = field.value.filter((t: string) => t !== tag);
 
@@ -145,7 +148,6 @@ const Question = ({ type, mongoUserId, questionDetails }: Props) => {
               <Editor
                 apiKey={process.env.NEXT_PUBLIC_TINY_EDITOR_API_KEY}
                 onInit={(evt, editor) => {
-                  // @ts-ignore
                   editorRef.current = editor
                 }}
                 onBlur={field.onBlur}
@@ -193,7 +195,7 @@ const Question = ({ type, mongoUserId, questionDetails }: Props) => {
                 
                 {field.value.length > 0 && (
                   <div className="flex-start mt-2.5 gap-2.5">
-                    {field.value.map((tag: any) => (
+                    {field.value.map((tag: string) => (
                       <Badge key={tag} className="subtle-medium background-light800_dark300 text-light400_light500 flex items-center justify-center gap-2 rounded-md border-none px-4 py-2 capitalize" 
                       onClick={() => type !== 'Edit' ? handleTagRemove(tag, field) : () => {}}>
                         {tag}
