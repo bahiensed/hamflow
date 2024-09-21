@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { ClerkProvider } from '@clerk/nextjs'
 
 import "@/app/styles/globals.css";
+import "@/app/styles/prism.css";
+
 import { inter, spaceGrotesk } from "@/app/fonts";
 import { ThemeProvider } from "@/context/ThemeProvider";
 import Navbar from '@/components/shared/navbar/Navbar'
