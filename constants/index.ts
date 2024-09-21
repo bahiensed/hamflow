@@ -19,7 +19,7 @@ export const sidebarLinks: SidebarLink[] = [
   },
   {
     imgURL: "/assets/icons/star.svg",
-    route: "/favorites",
+    route: "/favorite-questions",
     label: "Favorites",
   },
   {
