@@ -41,6 +41,7 @@ export default async function Home({ searchParams }: SearchParamsProps) {
 
       <div className="mt-10 flex w-full flex-col gap-6">
         {result.questions.length > 0 ?
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           result.questions.map((question: any) => (
             <QuestionCard 
               key={question._id}
@@ -56,7 +57,7 @@ export default async function Home({ searchParams }: SearchParamsProps) {
           ))
           : <NoResult 
             title="There’s no question saved to show"
-            description="Be the first to break the silence! 🚀 Ask a Question and kickstart the discussion. our query could be the next big thing others learn from. Get involved! 💡"
+            description="Be the first to break the silence! Ask a question and kickstart the discussion. Your query could be the next big thing others learn from!"
             link="/ask-question"
             linkTitle="Ask a Question"
           />}

@@ -3,6 +3,7 @@ import Profile from '@/components/forms/Profile';
 import { getUserById } from '@/lib/actions/user.action';
 import { ParamsProps } from '@/types';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Page = async ({ params }: ParamsProps) => {
   const { userId } = auth();
 
