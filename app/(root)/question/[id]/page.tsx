@@ -86,6 +86,7 @@ const Page = async ({ params, searchParams }: any) => {
       <ParseHTML data={result.content} />
 
       <div className="mt-8 flex flex-wrap gap-2">
+        { /* eslint-disable-next-line @typescript-eslint/no-explicit-any */ }
         {result.tags.map((tag: any) => (
           <RenderTag 
             key={tag._id}
