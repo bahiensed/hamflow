@@ -129,7 +129,6 @@ const Answer = ({ question, questionId, authorId }: Props) => {
                 <Editor
                   apiKey={process.env.NEXT_PUBLIC_TINY_EDITOR_API_KEY}
                   onInit={(evt, editor) => {
-                    // @ts-expect-error - TypeScript can't infer editor's type during init
                     editorRef.current = editor;
                   }}
                   onBlur={field.onBlur}
