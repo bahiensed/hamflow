@@ -118,6 +118,10 @@ npm install --save @tinymce/tinymce-react
 npm install svix
 ```
 
+### Install shadcn skeleton to load pages
+```bash
+npx shadcn-ui@latest add skeleton
+```
 
 
 ## Questions
