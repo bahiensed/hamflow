@@ -19,9 +19,10 @@ const GlobalSearch = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleOutsideClick = (event: any) => {
       if(searchContainerRef.current &&
-      // @ts-ignore
+      // @ts-expect-error - TinyMCE problem
       !searchContainerRef.current.contains(event.target)
       ) {
         setIsOpen(false);

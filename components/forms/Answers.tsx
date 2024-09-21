@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 
+import { Editor as TinyMCEEditor } from 'tinymce'
 import { Editor } from '@tinymce/tinymce-react'
 
 import { Button } from '../ui/button'
@@ -27,7 +28,7 @@ const Answer = ({ question, questionId, authorId }: Props) => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmittingAI, setSetIsSubmittingAI] = useState(false);
   const { mode } = useTheme();
-  const editorRef = useRef(null)
+  const editorRef = useRef<TinyMCEEditor | null>(null)
   const form = useForm<z.infer<typeof AnswerSchema>>({
     resolver: zodResolver(AnswerSchema),
     defaultValues: {
@@ -49,8 +50,7 @@ const Answer = ({ question, questionId, authorId }: Props) => {
       form.reset();
 
       if(editorRef.current) {
-        const editor = editorRef.current as any;
-
+        const editor = editorRef.current as TinyMCEEditor;
         editor.setContent('');
       }
     } catch (error) {
@@ -73,12 +73,10 @@ const Answer = ({ question, questionId, authorId }: Props) => {
 
       const aiAnswer = await response.json();
 
-      // Convert plain text to HTML format
-
       const formattedAnswer = aiAnswer.reply.replace(/\n/g, '<br />');
 
       if(editorRef.current) {
-        const editor = editorRef.current as any;
+        const editor = editorRef.current as TinyMCEEditor;
         editor.setContent(formattedAnswer);
       }
 
@@ -131,8 +129,8 @@ const Answer = ({ question, questionId, authorId }: Props) => {
                 <Editor
                   apiKey={process.env.NEXT_PUBLIC_TINY_EDITOR_API_KEY}
                   onInit={(evt, editor) => {
-                    // @ts-ignore
-                    editorRef.current = editor
+                    // @ts-expect-error - TypeScript can't infer editor's type during init
+                    editorRef.current = editor;
                   }}
                   onBlur={field.onBlur}
                   onEditorChange={(content) => field.onChange(content)}
