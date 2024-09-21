@@ -14,18 +14,13 @@ export const sidebarLinks: SidebarLink[] = [
   },
   {
     imgURL: "/assets/icons/users.svg",
-    route: "/community",
-    label: "Community",
+    route: "/qrz",
+    label: "QRZ",
   },
   {
     imgURL: "/assets/icons/star.svg",
     route: "/collection",
     label: "Collections",
-  },
-  {
-    imgURL: "/assets/icons/suitcase.svg",
-    route: "/jobs",
-    label: "Find Jobs",
   },
   {
     imgURL: "/assets/icons/tag.svg",
@@ -40,7 +35,7 @@ export const sidebarLinks: SidebarLink[] = [
   {
     imgURL: "/assets/icons/question.svg",
     route: "/ask-question",
-    label: "Ask a question",
+    label: "Ask Question",
   },
 ];
 
