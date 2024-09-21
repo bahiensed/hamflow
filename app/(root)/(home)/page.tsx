@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from "next/link";
-import { auth } from "@clerk/nextjs/server"; // Use auth for server-side authentication
+import { auth } from "@clerk/nextjs/server";
 
 import Filter from "@/components/shared/Filter";
 import HomeFilters from "@/components/home/HomeFilters";
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 }
 
 export default async function Home({ searchParams }: SearchParamsProps) {
-  const { userId } = auth(); // Use auth instead of getAuth
+  const { userId } = auth();
 
   let result;
 
@@ -50,7 +50,7 @@ export default async function Home({ searchParams }: SearchParamsProps) {
 
         <Link href="/ask-question" className="flex justify-end max-sm:w-full">
           <Button className="primary-gradient min-h-[46px] px-4 py-3 !text-light-900">
-            Ask a Question
+            Ask Question
           </Button>
         </Link>
       </div>
@@ -91,9 +91,9 @@ export default async function Home({ searchParams }: SearchParamsProps) {
         ) : (
           <NoResult
             title="There’s no question to show"
-            description="Be the first to break the silence! 🚀 Ask a Question and kickstart the discussion. Your query could be the next big thing others learn from. Get involved! 💡"
+            description="Be the first to break the silence! Ask a question and kickstart a discussion. Your query could be the next big thing others learn from!"
             link="/ask-question"
-            linkTitle="Ask a Question"
+            linkTitle="Ask Question"
           />
         )}
       </div>
