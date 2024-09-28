@@ -18,8 +18,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          500: "#008FFF", // Complementary of #FF7000
-          100: "#000E19", // Complementary of #FFF1E6
+          500: "#008FFF", // #FF7000
+          100: "#000E19", // #FFF1E6
         },
         dark: {
           100: "#000000",
