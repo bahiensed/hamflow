@@ -14,7 +14,7 @@ import { getQuestions, getRecommendedQuestions } from "@/lib/actions/question.ac
 import { SearchParamsProps } from "@/types";
 
 export const metadata: Metadata = {
-  title: 'Home | Ham Flow',
+  title: 'All Questions | Ham Flow',
 }
 
 export default async function Home({ searchParams }: SearchParamsProps) {
@@ -45,8 +45,8 @@ export default async function Home({ searchParams }: SearchParamsProps) {
 
   return (
     <>
-      <div className="flex w-full flex-col-reverse justify-between gap-4 sm:flex-row sm:items-center">
-        <h1 className="h1-bold text-dark100_light900">All Questions</h1>
+      <div className="flex w-full justify-between gap-1 sm:flex-row sm:items-center">
+        <h1 className="h1-bold font-spaceGrotesk text-dark-100 dark:text-light-900">All Questions</h1>
 
         <Link href="/ask-question" className="flex justify-end max-sm:w-full">
           <Button className="primary-gradient min-h-[46px] px-4 py-3 !text-light-900">
@@ -55,7 +55,7 @@ export default async function Home({ searchParams }: SearchParamsProps) {
         </Link>
       </div>
 
-      <div className="mt-11 flex justify-between gap-5 max-sm:flex-col sm:items-center">
+      <div className="mt-8 flex justify-between gap-4 max-sm:flex-col sm:items-center">
         <LocalSearchbar
           route="/"
           iconPosition="left"
