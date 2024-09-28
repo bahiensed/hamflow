@@ -1,8 +1,9 @@
 # Ham Flow
 
 Where amateur radio operators (also known as radio amateurs or hams) share their knowledge.  
-
+&nbsp;  
 Change is constant!  
+**Incomplete live site:** https://www.hamflow.com  
 
 
 ## Prerequisites
