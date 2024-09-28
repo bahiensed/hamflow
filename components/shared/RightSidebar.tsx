@@ -10,40 +10,45 @@ const RightSidebar = async () => {
   const popularTags = await getTopPopularTags();
 
   return (
-    <section className="background-light900_dark200 light-border custom-scrollbar sticky right-0 top-0 flex h-screen w-[320px] flex-col overflow-y-auto border-l p-6 pt-36 shadow-light-300 dark:shadow-none max-xl:hidden">
+    <section className="custom-scrollbar sticky flex h-screen w-[320px] flex-col gap-8 overflow-y-auto bg-white px-5 pt-24 dark:bg-slate-950 max-xl:hidden">
       <div>
-        <h3 className="h3-bold text-dark200_light900">Top Questions</h3>
-        <div className="mt-8 flex w-full flex-col gap-[32px]">
+        <h3 className="font-spaceGrotesk text-2xl font-medium tracking-tighter text-dark-100 dark:text-white">
+          Top Questions
+        </h3>
+        <div className="mt-6 flex flex-1 flex-col gap-5">
           {hotQuestions.map((question) => (
             <Link
               href={`/question/${question._id}`}
               key={question._id}
-              className='flex cursor-pointer items-center justify-between gap-8'
+              className='flex cursor-pointer items-center justify-between gap-4'
             >
               <p className="body-medium text-dark500_light700">{question.title}</p>
               <Image 
                 src="/assets/icons/chevron-right.svg"
                 alt="chevron right"
-                width={20}
-                height={20}
+                width={24}
+                height={24}
                 className="invert-colors"
               />
             </Link>
           ))}
         </div>
       </div>
-      <div className="mt-16">
-      <h3 className="h3-bold text-dark200_light900">Popular Tags</h3>
-        <div className="mt-7 flex flex-col gap-4">
-            {popularTags.map((tag) => (
-              <RenderTag 
-                key={tag._id}
-                _id={tag._id}
-                name={tag.name}
-                totalQuestions={tag.numberOfQuestions}
-                showCount
-              />
-            ))}
+
+      <div>
+        <h3 className="font-spaceGrotesk text-2xl font-medium tracking-tighter text-dark-100 dark:text-white">
+          Popular Tags
+        </h3>
+        <div className="mt-6 flex flex-1 flex-col gap-5">
+          {popularTags.map((tag) => (
+            <RenderTag 
+              key={tag._id}
+              _id={tag._id}
+              name={tag.name}
+              totalQuestions={tag.numberOfQuestions}
+              showCount
+            />
+          ))}
         </div>
       </div>
     </section>
