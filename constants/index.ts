@@ -13,9 +13,9 @@ export const sidebarLinks: SidebarLink[] = [
     label: "Home",
   },
   {
-    imgURL: "/assets/icons/users.svg",
-    route: "/qrz",
-    label: "QRZ",
+    imgURL: "/assets/icons/tag.svg",
+    route: "/tags",
+    label: "Tags",
   },
   {
     imgURL: "/assets/icons/star.svg",
@@ -23,14 +23,19 @@ export const sidebarLinks: SidebarLink[] = [
     label: "Favorites",
   },
   {
-    imgURL: "/assets/icons/tag.svg",
-    route: "/tags",
-    label: "Tags",
+    imgURL: "/assets/icons/users.svg",
+    route: "/qrz",
+    label: "QRZ",
   },
   {
     imgURL: "/assets/icons/user.svg",
     route: "/profile",
     label: "Profile",
+  },
+  {
+    imgURL: "/assets/icons/star.svg",
+    route: "/your-favorites",
+    label: "Your Favorites",
   },
   {
     imgURL: "/assets/icons/question.svg",
