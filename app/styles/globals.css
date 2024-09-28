@@ -62,10 +62,16 @@ body {
   @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
 }
 
-.active-theme {
+/*.active-theme {
   filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
     brightness(104%) contrast(106%) !important;
+}*/
+
+.active-theme {
+  filter: invert(31%) sepia(100%) saturate(748%) hue-rotate(183deg)
+    brightness(97%) contrast(104%) !important;
 }
+
 
 .light-gradient {
   background: linear-gradient(
