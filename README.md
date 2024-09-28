@@ -1,16 +1,16 @@
 # Ham Flow
+
 Where amateur radio operators (also known as radio amateurs or hams) share their knowledge.  
 
-
-Change is constant  
-Next.js is not just a frontend React framework, but a fullstack framework.  
-Study lections 11, 13, 14, 27, 29/30, 47
+Change is constant!  
 
 
 ## Prerequisites
+
 Node.js version 18+  
 **IDE:** VSCodium or Codespaces  
 **Browser:** Google Chromium or Mozilla Firefox  
+
 
 ### VSCodium Extensions:
 - Auto Close Tag  
@@ -28,21 +28,15 @@ Node.js version 18+
 
 
 ### Installs:
-```bash
-npm install eslint-config-standard
-```
 
-```bash
-npm install eslint-plugin-tailwindcss
-```
+`npm install eslint-config-standard`  
 
-```bash
-npm install eslint-config-prettier
-```
+`npm install eslint-plugin-tailwindcss`  
 
-```bash
-npm install prettier
-```
+`npm install eslint-config-prettier`  
+
+`npm install prettier`  
+
 
 #### extend .eslintrc.json
 
@@ -81,8 +75,10 @@ Shift + Ctrl + P: 'open settings json'
 }
 ```
 
+
 ### Figma layout:
 https://www.figma.com/file/2vtjgodtBxTdg0zOUHPvXh/Course-Designs?type=design&node-id=0%3A1&mode=design&t=kE2VnjGXGIiOk2PY-1
+
 
 ### Setup layout:
 - tailwind.config.ts
@@ -91,40 +87,48 @@ https://www.figma.com/file/2vtjgodtBxTdg0zOUHPvXh/Course-Designs?type=design&nod
 
 
 ### Install
-```bash
-npm install @tailwindcss/typography tailwindcss-animate
-```
+
+`npm install @tailwindcss/typography tailwindcss-animate`  
+
 
 ## BACKEND
+
+
+
 ## Database
+
+
+
 ### Install mongodb and mongoose
-```bash
-npm install mongodb mongoose
-```
+
+`npm install mongodb mongoose`  
+
 
 ### Install shadcn form and zod
-```bash
-npx shadcn-ui@latest add form
-```
+
+`npx shadcn-ui@latest add form`
+
 
 ### Install shadcn tiny mce
-```bash
-npm install --save @tinymce/tinymce-react
-```
+
+`bash npm install --save @tinymce/tinymce-react`
 
 
 ### Install svix for webhook with Clerk
-```bash
-npm install svix
-```
+
+`npm install svix`
+
 
 ### Install shadcn skeleton to load pages
-```bash
-npx shadcn-ui@latest add skeleton
-```
+
+`npx shadcn-ui@latest add skeleton`
 
 
 ## Questions
+
+Next.js is not just a frontend React framework, but a fullstack framework.  
+Study lections 11, 13, 14, 27, 29/30, 47
+
 
 - What is a function?
 - What is markup?
