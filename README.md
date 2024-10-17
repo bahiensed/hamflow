@@ -76,11 +76,6 @@ Shift + Ctrl + P: 'open settings json'
 }
 ```
 
-
-### Figma layout:
-https://www.figma.com/file/2vtjgodtBxTdg0zOUHPvXh/Course-Designs?type=design&node-id=0%3A1&mode=design&t=kE2VnjGXGIiOk2PY-1
-
-
 ### Setup layout:
 - tailwind.config.ts
 - globals.css
