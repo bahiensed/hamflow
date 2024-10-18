@@ -1,7 +1,13 @@
 # Ham Flow
 
 Where amateur radio operators (also known as radio amateurs or hams) share their knowledge.  
-&nbsp;  
+
+**This is a hobby project.**  
+
+As an amateur radio operator myself ([callsign PY1II](https://www.qrz.com/db/PY1II)), I’m building this site for the amateur radio community. If you're a programmer and would like to contribute, your help would be greatly appreciated!  
+
+I also use this project as a way to introduce my students to web development. If you’re interested in learning more about our programming school for kids, check out [SuperGeeks Petrópolis](https://www.instagram.com/p/C033hLbu6qa/?img_index=1).  
+
 Change is constant!  
 **Incomplete live site:** https://www.hamflow.com  
 
